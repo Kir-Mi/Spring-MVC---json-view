@@ -58,8 +58,6 @@ public class UserControllerTest {
 
     @Test
     public void getUserByIdTest() throws Exception {
-        String userJson = getMapper().writerWithView(Views.Details.class).writeValueAsString(user);
-
 
         when(userService.getUserById(1L)).thenReturn(user);
 
